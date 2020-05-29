@@ -1,0 +1,23 @@
+$dark-blue: #2c3e50;
+$light-gray: #ecf0f1;
+
+body {
+  padding-top: 70px;
+}
+
+.jumbotron {
+  color: $dark-blue;
+  background: $light-gray;
+}
+
+.navbar-inverse {
+  background: $dark-blue;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+}

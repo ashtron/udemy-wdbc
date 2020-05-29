@@ -1,0 +1,18 @@
+.box {
+  width: 250px;
+  height: 250px;
+  margin: 1%;
+  float: left;
+}
+
+.green {
+  background: lightgreen;
+}
+
+.pink {
+  background: pink;
+}
+
+.blue {
+  background: cornflowerblue;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+  </head>
+  <body>
+    <h1>Register</h1>
+
+    <form>
+      <div>
+        <label for="firstName">First Name:</label>
+        <input id="firstName" type="text" name="firstName" required>
+        <label for="lastName">Last Name:</label>
+        <input id="lastName" type="text" name="lastName" required>
+      </div>
+
+      <div>
+        <label for="male">Male</label>
+        <input id="male" name="gender" type="radio" value="male">
+        <label for="female">Female</label>
+        <input id="female" name="gender" type="radio" value="female">
+        <label for="other">Other</label>
+        <input id="other" name="gender" type="radio" value="other">
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" required>
+        <label for="password">Password:</label>
+        <input id="password" type="password" name="password" minlength="5" maxlength="10" required>
+      </div>
+
+      <div>
+        <label>Birthday:
+          <select name="birthMonth">
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+          </select>
+          <select name="birthDay">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+          <select name="birthYear">
+            <option>1901</option>
+            <option>1907</option>
+            <option>1923</option>
+          </select>
+        </label>
+      </div>
+
+      <label for="tos">I agree to the Terms and Conditions:</label>
+      <input id="tos" type="checkbox" name="tos" required>
+
+      <div><input type="submit" name=""></div>
+    </form>
+  </body>
+</html>

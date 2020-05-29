@@ -1,0 +1,12 @@
+body {
+  font-size: 1.2em;
+}
+
+.winner {
+  color: pink;
+}
+
+.warning {
+  color: red;
+  font-size: .8em;
+}
