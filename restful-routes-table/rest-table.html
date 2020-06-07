@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Semantic UI REST Table</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    </head>
+
+    <body style="background-color: #f8f8ff;">
+        <div class="ui container" style="margin-top: 6%">
+            <h2 class="ui top attached header">RESTful Routes</h2>
+            <table class="ui attached center aligned celled table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Path</th>
+                        <th>HTTP Verb</th>
+                        <th>Purpose</th>
+                        <th class="togglable" id="mongoose-method-header">Mongoose Method</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Name">index</td>
+                        <td data-label="Path">/things</td>
+                        <td data-label="HTTP Verb">GET</td>
+                        <td data-label="Purpose">list all things</td>
+                        <td data-label="Mongoose Method" class="togglable">Thing.find()</td>
+                    </tr>
+                    <tr class="positive">
+                        <td data-label="Name">new</td>
+                        <td data-label="Path">/things/new</td>
+                        <td data-label="HTTP Verb">GET</td>
+                        <td data-label="Purpose">show new thing form</td>
+                        <td data-label="Mongoose Method" class="togglable"></td>
+                    </tr>
+                    <tr class="positive">
+                        <td data-label="Name">create</td>
+                        <td data-label="Path">/things</td>
+                        <td data-label="HTTP Verb">POST</td>
+                        <td data-label="Purpose">create new thing, then redirect somewhere</td>
+                        <td data-label="Mongoose Method" class="togglable">Thing.create()</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Name">show</td>
+                        <td data-label="Path">/things/:id</td>
+                        <td data-label="HTTP Verb">GET</td>
+                        <td data-label="Purpose">show information about a particular thing</td>
+                        <td data-label="Mongoose Method" class="togglable">Thing.findById()</td>
+                    </tr>
+                    <tr class="warning">
+                        <td data-label="Name">edit</td>
+                        <td data-label="Path">/things/:id/edit</td>
+                        <td data-label="HTTP Verb">GET</td>
+                        <td data-label="Purpose">show edit form for a particular thing</td>
+                        <td data-label="Mongoose Method" class="togglable">Thing.findById()</td>
+                    </tr>
+                    <tr class="warning">
+                        <td data-label="Name">update</td>
+                        <td data-label="Path">/things/:id</td>
+                        <td data-label="HTTP Verb">PUT</td>
+                        <td data-label="Purpose">update a particular thing, then redirect somewhere</td>
+                        <td data-label="Mongoose Method" class="togglable">Thing.findByIdAndUpdate()</td>
+                    </tr>
+                    <tr class="negative">
+                        <td data-label="Name">destroy</td>
+                        <td data-label="Path">/things/:id</td>
+                        <td data-label="HTTP Verb">DELETE</td>
+                        <td data-label="Purpose">delete a particular thing, then redirect somewhere</td>
+                        <td data-label="Mongoose Method" class="togglable">Thing.findByIdAndRemove()</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <script src="app.js" type="text/javascript"></script>
+    </body>
+</html>
